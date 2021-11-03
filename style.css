@@ -175,7 +175,7 @@ section .title::before{
 
 .contact{
     color: white;
-    background: black;
+    background: #5d9da6;
 }
 .contact .title::before{
     width: 150px;
@@ -243,7 +243,7 @@ section .title::before{
 
 .edu{
     color: white;
-    background: black;
+    background: #5d9da6;
     font-family: 'Prompt', sans-serif;
 }
 .edu .title::before{
@@ -281,15 +281,18 @@ section .title::before{
 
 .edu-content .box-container .box h3{
     font-size: 2rem;
-    color:#fff;
+    color:#eeeeee;
     padding-top: 2rem;
 }
 
 .edu-content .box-container .box p{
     font-size: 1.3rem;
-    color:#eee;
+    color:#eeeeee;
     padding: 1rem 0;
 }
+
+
+
 
 
 
