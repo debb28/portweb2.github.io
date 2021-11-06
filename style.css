@@ -291,9 +291,28 @@ section .title::before{
     padding: 1rem 0;
 }
 
-
-
-
+.cer{
+    font-family: 'Prompt', sans-serif;
+}
+.cer .cer-content .cer-img{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px;
+}
+.cer .cer-content .cer-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.cer .cer-content .cer-img p{
+    padding: 0;
+    color: gray;
+}
+.cer .cer-content .cer-img h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
 
 
 
