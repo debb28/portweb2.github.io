@@ -1,0 +1,16 @@
+.home{
+    display: flex;
+    background: url("img/banner.png")no-repeat center;
+    height: 101px;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.work{
+    font-family: 'Ubuntu', 'Prompt', sans-serif;
+    background: gainsboro;
+}
+.work .title::before{
+    width: 110px;
+}

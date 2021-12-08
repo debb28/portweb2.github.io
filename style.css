@@ -1,66 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-.navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-}
-.navbar.sticky{
-    padding: 30px 0;
-    background-color: orange;
-}
-.navbar .max-width{
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-}
-.navbar .logo a{
-    color: white;
-    font-size: 35px;
-    font-weight: 600;
-}
-.navbar .logo a span{
-    color: orange;
-    transition: color 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: white;
-}
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a{
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: orange;
-}
-.navbar.sticky .menu li a:hover{
-    color: white;
-}
-.menu-btn{
-    color: white;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-} 
+
 .home{
     display: flex;
     background: url("img/banner.png")no-repeat center;
@@ -90,31 +28,8 @@
     color: orange;
     font-weight: 500;
 }
-
-section{
-    padding: 100px 0;
-}
 .about, .contact, .work{
     font-family: 'Poppins', sans-serif;
-}
-section .title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
 }
 .about .about-content,
 .contact .contact-content{
@@ -150,6 +65,9 @@ section .title::before{
     font-size: 22px;
     font-weight: 550;
     padding: 10px;
+    margin-bottom: 15px;
+    border: #5d9da6 2px solid;
+    text-align: center;
 }
 
 .about .about-content .right .data-left p{
@@ -195,6 +113,19 @@ section .title::before{
 }
 .contact .contact-content .card:hover{
     background: orange;
+
+}
+.contact .contact-content .card:hover .fb{
+    background: orange;
+    color: blue;
+}
+.contact .contact-content .card:hover .line{
+    background: orange;
+    color: green;
+}
+.contact .contact-content .card:hover .em{
+    background: orange;
+    color: red;
 }
 .contact .contact-content .card .box{
     transition: all ease 0.3s;
@@ -241,35 +172,38 @@ section .title::before{
     padding-top: 10px;
 }
 
-.edu{
+.education{
     color: white;
     background: #5d9da6;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Ubuntu', 'Prompt', sans-serif;
 }
-.edu .title::before{
+.education .title::before{
+    width: 180px;
     background: white;
 }
-.edu-content.box-container{
+.education .title::after{
+    background: black;
+}
+.education .box-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     padding:2rem 0;
 }
-
-.edu-content .box-container .box{
-    width: 30rem;
+.education .box-container .box{
+    width:30rem;
     padding:0 2rem;
     padding-bottom: 4rem;
     border-left: .2rem solid #eee;
 }
-.edu-content .box-container .box .year{
+
+.education .box-container .box .year{
     font-size: 2rem;
     color:orange;
     position: relative;
-    font-family: 'Poppins', sans-serif;
 }
 
-.edu-content .box-container .box .year::before{
+.education .box-container .box .year::before{
     content:'';
     position: absolute;
     top:.3rem; left: -3.1rem;
@@ -279,40 +213,85 @@ section .title::before{
     background:#fff;
 }
 
-.edu-content .box-container .box h3{
+.education .box-container .box h3{
     font-size: 2rem;
-    color:#eeeeee;
-    padding-top: 2rem;
+    color:#fff;
+    padding-top: 1rem;
 }
 
-.edu-content .box-container .box p{
-    font-size: 1.3rem;
-    color:#eeeeee;
+.education .box-container .box p{
+    font-size: 1.5rem;
+    color:#404040;
     padding: 1rem 0;
 }
+.education .hv .hv1{
+    transition: color 0.3s ease;
+}
+.education .hv .hv1:hover{
+    background: #80cd5b;
+}
+.education .hv .hv2{
+    transition: color 0.3s ease;
+}
+.education .hv .hv2:hover{
+    background: #846ac5;
+}
+.education .hv .hv3{
+    transition: color 0.3s ease;
+}
+.education .hv .hv3:hover{
+    background: #d15353;
+}
+
 
 .cer{
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Ubuntu', 'Prompt', sans-serif;
 }
-.cer .cer-content .cer-img{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px;
+.cer img{
+	max-width: 100%;
 }
-.cer .cer-content .cer-img img{
+.con {
+    position: relative;
+}
+.image {
+    opacity: 1;
+    display: block;
     width: 100%;
-    border-radius: 10px;
-}
-.cer .cer-content .cer-img p{
-    padding: 0;
-    color: gray;
-}
-.cer .cer-content .cer-img h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: left;
-}
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .con:hover .image {
+    opacity: 0.3;
+  }
+  
+  .con:hover .middle {
+    opacity: 1;
+  }
+  
+  .text-mid {
+    background-color: orange;
+    color: white;
+    font-size: 10px;
+    padding: 8px 16px;
+    border-radius: 40%;
+  }
+  
+
+
+
 
 
 
@@ -374,6 +353,27 @@ section .title::before{
     .home .home-content .text-3{
         font-size: 35px;
     }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .column .text-2{
+        font-size: 15px;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .contact .contact-content .card{
+        margin-bottom: 15px;
+    }
+    
+
+
+
 }
 @media(max-width: 690px){
     .max-width{
@@ -386,6 +386,7 @@ section .title::before{
     .home .home-content .text-3{
         font-size: 32px;
     }
+    
 }
 @media(max-width: 500px){
     .home .home-content .text-2{
@@ -394,5 +395,16 @@ section .title::before{
     }
     .home .home-content .text-3{
         font-size: 27px;
+    }
+    .contact .contact-content .card{
+        display: flex;
+        align-content: center;
+        margin-bottom: 15px;
+    }
+    .work .work-content .card .text{
+        font-size: 15px;
+    }
+    .cer img{
+        padding-bottom: 30px;
     }
 }
